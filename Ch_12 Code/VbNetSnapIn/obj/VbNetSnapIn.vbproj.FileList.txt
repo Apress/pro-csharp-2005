@@ -1,0 +1,7 @@
+bin\VbNetSnapIn.dll
+bin\VbNetSnapIn.pdb
+bin\\CommonSnappableTypes.dll
+bin\\CommonSnappableTypes.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\VbNetSnapIn.dll
+obj\Debug\VbNetSnapIn.pdb

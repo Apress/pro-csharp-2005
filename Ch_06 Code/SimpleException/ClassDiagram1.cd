@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Diagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="1" MinorVersion="1" xmlns="http://www.microsoft.com/VisualStudio/EnterpriseTools/ClassDesigner/V1.1/DiagramSchema.xsd">
+  <View FilterFieldProperty="false" LastOpened="true" Name="Main">
+    <AbsoluteBounds X="0" Y="0" Height="8.5" Width="11" />
+    <Font Name="Tahoma" Size="0.1145833358168602" />
+    <Class Collapsed="false">
+      <AbsoluteBounds X="0.75" Y="0.5" Height="0.93344828555981341" Width="1.5" />
+      <TypeIdentifier>
+        <FullName>SimpleException.Program</FullName>
+        <FileName>Program.cs</FileName>
+        <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      </TypeIdentifier>
+    </Class>
+    <Class Collapsed="false">
+      <AbsoluteBounds X="0.75" Y="1.75" Height="0.933448285559813" Width="1.5" />
+      <TypeIdentifier>
+        <FullName>SimpleException.Radio</FullName>
+        <FileName>Radio.cs</FileName>
+        <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      </TypeIdentifier>
+    </Class>
+    <Class Collapsed="false">
+      <AbsoluteBounds X="2.75" Y="0.5" Height="2.3175734483202297" Width="1.5" />
+      <TypeIdentifier>
+        <FullName>SimpleException.Car</FullName>
+        <FileName>Car.cs</FileName>
+        <HashCode>AAACAQAAAAAAAAQBAAAAIAAACAAAAAAAAAAAAAACAAA=</HashCode>
+      </TypeIdentifier>
+    </Class>
+  </View>
+</Diagram>

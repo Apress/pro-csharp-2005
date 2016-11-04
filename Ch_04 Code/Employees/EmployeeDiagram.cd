@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Diagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="1" MinorVersion="1" xmlns="http://www.microsoft.com/VisualStudio/EnterpriseTools/ClassDesigner/V1.1/DiagramSchema.xsd">
+  <View FilterFieldProperty="false" LastOpened="true" Name="Main">
+    <AbsoluteBounds X="0" Y="0" Height="8.5" Width="11" />
+    <Font Name="Tahoma" Size="0.1145833358168602" />
+    <Class Collapsed="false">
+      <AbsoluteBounds X="1" Y="0.5" Height="3.0533972221612928" Width="2" />
+      <TypeIdentifier>
+        <FullName>Employees.Employee</FullName>
+        <FileName>Employee.cs</FileName>
+        <HashCode>AAAAAAAAIAgAggAAAECIAEQQEAAAAACEAAAAhAAAAUA=</HashCode>
+      </TypeIdentifier>
+      <Compartment Group="Kind" HasGroup="true" HeaderText="Fields" IsDefaultExpandCollapseState="false" />
+      <Compartment Group="Kind" HasGroup="true" HeaderText="Properties" IsDefaultExpandCollapseState="false" />
+      <Compartment Group="Kind" HasGroup="true" HeaderText="Methods" IsDefaultExpandCollapseState="false" />
+      <Compartment Group="Kind" HasGroup="false" HeaderText="Nested Types" IsDefaultExpandCollapseState="false" />
+      <NestedType xsi:type="ClassShapeProxy" Collapsed="false">
+        <TypeIdentifier>
+          <FullName>Employees.Employee.BenefitPackage</FullName>
+        </TypeIdentifier>
+        <Compartment Group="Kind" HasGroup="true" HeaderText="Methods" IsDefaultExpandCollapseState="false" />
+        <Compartment Group="Kind" HasGroup="false" HeaderText="Nested Types" IsDefaultExpandCollapseState="false" />
+        <NestedType xsi:type="EnumShapeProxy" Collapsed="true">
+          <TypeIdentifier>
+            <FullName>Employees.Employee.BenefitPackage.BenefitPackageLevel</FullName>
+          </TypeIdentifier>
+        </NestedType>
+      </NestedType>
+    </Class>
+    <Class Collapsed="false">
+      <AbsoluteBounds X="0.5" Y="4.25" Height="2.0350319444139791" Width="1.5" />
+      <TypeIdentifier>
+        <FullName>Employees.Manager</FullName>
+        <FileName>Manager.cs</FileName>
+        <HashCode>gAAABAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQA=</HashCode>
+      </TypeIdentifier>
+    </Class>
+    <Class Collapsed="false">
+      <AbsoluteBounds X="4.25" Y="4.25" Height="1.1001149522264795" Width="1.5" />
+      <TypeIdentifier>
+        <FullName>Employees.PTSalesPerson</FullName>
+        <FileName>PTSales.cs</FileName>
+        <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      </TypeIdentifier>
+    </Class>
+    <Class Collapsed="false">
+      <AbsoluteBounds X="2.25" Y="4.25" Height="2.0350319444139791" Width="1.5" />
+      <TypeIdentifier>
+        <FullName>Employees.SalesPerson</FullName>
+        <FileName>SalesEmp.cs</FileName>
+        <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAASA=</HashCode>
+      </TypeIdentifier>
+    </Class>
+  </View>
+</Diagram>

@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>This Is the Cars Web Site</title>
+
+    <script language="javascript" type="text/javascript">
+<!--
+
+function btnHelp_onclick() {
+    alert("Dude, it is not that hard.  Click the Submit button!");
+}
+
+function btnSubmit_onclick(){
+     // If they forget either item, pop up a message box.
+     if((defaultPage.txtUserName.value == "") ||
+     (defaultPage.txtPassword.value == ""))
+     {
+          alert("You must supply a user name and password!");
+          return false;
+     }
+     return true;
+}
+
+// -->
+</script>
+
+</head>
+<body bgcolor="NavajoWhite">
+    <!-- Prompt for user input-->
+    <h1 align="center">
+        The Cars Login Page</h1>
+    <p align="center">
+        <br>
+        Please enter your <i>user name</i> and <i>password</i>.</p>
+    <!-- Build a form to get user info -->
+    <form action ="http://localhost/Cars/ClassicAspPage.asp" 
+     method = "GET" id="defaultPage" name="defaultPage">
+        <p align="center">
+            User Name:
+            <input id="txtUserName" type="text" name="txtUserName"></p>
+        <p align="center">
+            Password:
+            <input name="txtPassword" type="password" id="txtPassword"></p>
+        <p align="center">
+            <input name="btnSubmit" type="submit" value="Submit" id="btnSubmit" language="javascript" onclick="return btnSubmit_onclick()">
+            <input name="btnReset" type="reset" value="Reset" id="btnReset">
+            <input id="btnHelp" type="button" value="Help" language="javascript" onclick="return btnHelp_onclick()" /></p>
+    </form>
+</body>
+</html>

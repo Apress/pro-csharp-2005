@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://IntertechTraining.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://IntertechTraining.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">A car-centric Web service</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://IntertechTraining.com/">
+      <s:element name="GetSalesTagLines">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSalesTagLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesTagLinesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SortCarMakes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="theCarsToSort" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SortCarMakesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SortCarMakesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesInfoDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSalesInfoDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesInfoDetailsResult" type="tns:ArrayOfSalesInfoDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesInfoDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesInfoDetails" type="tns:SalesInfoDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesInfoDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="info" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+        </s:sequence>
+        <s:attribute name="dateExpired" type="s:dateTime" use="required" />
+      </s:complexType>
+      <s:element name="GetCurrentInventory">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCurrentInventoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentInventoryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSalesTagLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesTagLines" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesTagLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesTagLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SortCarMakesSoapIn">
+    <wsdl:part name="parameters" element="tns:SortCarMakes" />
+  </wsdl:message>
+  <wsdl:message name="SortCarMakesSoapOut">
+    <wsdl:part name="parameters" element="tns:SortCarMakesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesInfoDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesInfoDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesInfoDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesInfoDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentInventorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentInventory" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentInventorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentInventoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CarSalesInfoWSSoap">
+    <wsdl:operation name="GetSalesTagLines">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get current discount blurbs</wsdl:documentation>
+      <wsdl:input message="tns:GetSalesTagLinesSoapIn" />
+      <wsdl:output message="tns:GetSalesTagLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SortCarMakes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sorts a list of car makes</wsdl:documentation>
+      <wsdl:input message="tns:SortCarMakesSoapIn" />
+      <wsdl:output message="tns:SortCarMakesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get details of current sales</wsdl:documentation>
+      <wsdl:input message="tns:GetSalesInfoDetailsSoapIn" />
+      <wsdl:output message="tns:GetSalesInfoDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentInventory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all autos in the Inventory table of the Cars database</wsdl:documentation>
+      <wsdl:input message="tns:GetCurrentInventorySoapIn" />
+      <wsdl:output message="tns:GetCurrentInventorySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CarSalesInfoWSSoap" type="tns:CarSalesInfoWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSalesTagLines">
+      <soap:operation soapAction="http://IntertechTraining.com/GetSalesTagLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SortCarMakes">
+      <soap:operation soapAction="http://IntertechTraining.com/SortCarMakes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoDetails">
+      <soap:operation soapAction="http://IntertechTraining.com/GetSalesInfoDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentInventory">
+      <soap:operation soapAction="http://IntertechTraining.com/GetCurrentInventory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CarSalesInfoWSSoap12" type="tns:CarSalesInfoWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSalesTagLines">
+      <soap12:operation soapAction="http://IntertechTraining.com/GetSalesTagLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SortCarMakes">
+      <soap12:operation soapAction="http://IntertechTraining.com/SortCarMakes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoDetails">
+      <soap12:operation soapAction="http://IntertechTraining.com/GetSalesInfoDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentInventory">
+      <soap12:operation soapAction="http://IntertechTraining.com/GetCurrentInventory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarSalesInfoWS">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">A car-centric Web service</wsdl:documentation>
+    <wsdl:port name="CarSalesInfoWSSoap" binding="tns:CarSalesInfoWSSoap">
+      <soap:address location="http://localhost/CarSalesInfoWS/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CarSalesInfoWSSoap12" binding="tns:CarSalesInfoWSSoap12">
+      <soap12:address location="http://localhost/CarSalesInfoWS/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

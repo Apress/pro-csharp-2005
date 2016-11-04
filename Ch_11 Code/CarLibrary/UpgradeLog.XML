@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?>
+<UpgradeLog>
+<Properties><Property Name="Solution" Value="CarLibrary">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\atroelsen\My Documents\My Books\C# and the .NET Platform 3rd Ed\Code\Ch_11 Code\CarLibrary\CarLibrary.sln">
+</Property><Property Name="Date" Value="Sunday, March 06, 2005">
+</Property><Property Name="Time" Value="15:16 PM">
+</Property></Properties><Event ErrorLevel="0" Project="CarLibrary" Source="CarLibrary.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CarLibrary" Source="CarLibrary.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CarLibrary.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CarLibrary.sln" Description="Converted">
+</Event></UpgradeLog>

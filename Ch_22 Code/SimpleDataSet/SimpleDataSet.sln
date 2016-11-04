@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDataSet", "SimpleDataSet.csproj", "{FA57940A-968C-4AF9-B799-949DC8A76068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA57940A-968C-4AF9-B799-949DC8A76068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA57940A-968C-4AF9-B799-949DC8A76068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA57940A-968C-4AF9-B799-949DC8A76068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA57940A-968C-4AF9-B799-949DC8A76068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
